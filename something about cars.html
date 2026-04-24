@@ -1,0 +1,83 @@
+< !DOCTYPE html >
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+                <title>Cars</title>
+                <style>
+                    body {
+                        background - color: black;
+                    color: white;
+                    font-family: Arial;
+        }
+                    .car {
+                        margin: 20px 0;
+        }
+                    img {
+                        width: 300px;
+        }
+                </style>
+        </head>
+
+        <body>
+
+            <header>
+                <button type="button" onclick="showText()">Choose car</button>
+                <p id="demo"></p>
+            </header>
+
+            <form method="POST" action="form.aspx">
+                <p>
+                    <label>Customer name:
+                        <input type="text" id="customerName" name="customerName" maxlength="10">
+                    </label>
+                </p>
+
+                <fieldset>
+                    <legend>Select Vehicle</legend>
+
+                    <p><label>
+                        <input type="radio" name="vehicle" value="BMW"> BMW
+                    </label></p>
+
+                    <p><label>
+                        <input type="radio" name="vehicle" value="Ford"> Ford
+                    </label></p>
+
+                    <p><label>
+                        <input type="radio" name="vehicle" value="Bugatti"> Bugatti
+                    </label></p>
+                </fieldset>
+            </form>
+
+            <div class="car BMW">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/BMW_X5.jpg">
+                    <p>The BMW X5 is a mid-size luxury SUV produced by BMW.</p>
+            </div>
+
+            <div class="car Ford">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Ford_Mustang.jpg">
+                    <p>The Ford Mustang is a famous American sports car.</p>
+            </div>
+
+            <div class="car Bugatti">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Bugatti_Chiron.jpg">
+                    <p>Bugatti Chiron has 1500 horsepower and extreme performance.</p>
+            </div>
+
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                frameborder="0" allowfullscreen>
+            </iframe>
+
+            <script>
+                function showText() {
+                    document.getElementById("demo").innerHTML = "My cars!";
+}
+            </script>
+
+            <footer>
+                <p>Copyright © Dj Thuram</p>
+            </footer>
+
+        </body>
+    </html>
